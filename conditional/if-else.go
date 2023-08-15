@@ -10,5 +10,13 @@ func main() {
 	} else {
 		result = "more"
 	}
-	fmt.Print(result)
+	fmt.Println(result)
+
+	// special syntex in golang where we can define variable in the if statemnet
+
+	if y := 5; y == 5 && y%5 == 0 {
+		fmt.Println("yes")
+	} else {
+		fmt.Println("no")
+	}
 }
